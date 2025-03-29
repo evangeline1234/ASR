@@ -23,4 +23,9 @@ if __name__ == "__main__":
     # Start the server on localhost:8001
     server = HTTPServer((HOST, PORT), PingHandler)
     print(f"Server running on http://{HOST}:{PORT}")
-    server.serve_forever()
+    try:
+        server.serve_forever()  # Runs until you press CTRL+C
+    except KeyboardInterrupt:
+        print("\nShutting down server...")
+        server.server_close()
+        print("Server stopped.")
