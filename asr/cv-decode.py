@@ -26,8 +26,9 @@ def process_csv():
         return
     
     df = pd.read_csv(csv_file)
+    df_test = df.head(10)
     file_paths = [
-        os.path.join(proj_dir, "datasets", row["filename"]) for _, row in df.iterrows()
+        os.path.join(proj_dir, "datasets", row["filename"]) for _, row in df_test.iterrows()
     ]
     transcriptions = []
     with ThreadPoolExecutor(max_workers=20) as executor:
@@ -44,8 +45,8 @@ def process_csv():
                 transcriptions.append("Error")
 
     # Add generated text to DataFrame
-    df["generated_text"] = transcriptions
-    df.to_csv(csv_file, index=False)
+    df_test["generated_text"] = transcriptions
+    df_test.to_csv("df_test", index=False)
     print("Transcription completed. CSV updated.")
 
 

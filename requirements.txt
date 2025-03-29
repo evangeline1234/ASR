@@ -1,4 +1,4 @@
-aiobotocore @ file:///C:/b/abs_a0zxrsvpwx/croot/aiobotocore_1714464454692/work
+aiobotocore==2.21.1
 aiohttp @ file:///C:/b/abs_8860tt1424/croot/aiohttp_1715108828392/work
 aioitertools @ file:///tmp/build/80754af9/aioitertools_1607109665762/work
 aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
@@ -28,11 +28,11 @@ black @ file:///C:/b/abs_78b8tb3pkd/croot/black_1717597506351/work
 bleach @ file:///opt/conda/conda-bld/bleach_1641577558959/work
 blinker @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/blinker_1699474692786/work
 bokeh @ file:///C:/b/abs_0aes0rbxnz/croot/bokeh_1718119072183/work
-botocore @ file:///C:/b/abs_0dkeqep0ox/croot/botocore_1714460586193/work
+botocore==1.37.1
 Bottleneck @ file:///C:/b/abs_f7un855idq/croot/bottleneck_1709069969633/work
 Brotli @ file:///C:/b/abs_3d36mno480/croot/brotli-split_1714483178642/work
 cachetools @ file:///C:/b/abs_792zbtc0ua/croot/cachetools_1713977157919/work
-certifi @ file:///C:/b/abs_55jxithrm3/croot/certifi_1717618077850/work/certifi
+certifi==2025.1.31
 cffi @ file:///C:/b/abs_78eb1_vq6z/croot/cffi_1714483206096/work
 chardet @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/chardet_1699498892802/work
 charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
