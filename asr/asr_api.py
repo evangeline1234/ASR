@@ -40,6 +40,10 @@ def transcribe_audio(audio_bytes: bytes):
 async def asr_endpoint(file: UploadFile = File(...)):
     audio_bytes = await file.read()
     transcription, duration = transcribe_audio(audio_bytes)
+
+    # Delete the file after processing
+    await file.close()
+
     return {"transcription": transcription, "duration": duration}
 
 if __name__ == "__main__":
