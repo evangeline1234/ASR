@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.13
 
 # Working directory
 WORKDIR /app
@@ -11,7 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy asr directory
 COPY asr /app/asr
-
 
 # Expose the port that FastAPI will run on
 EXPOSE 8001
