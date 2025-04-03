@@ -3,11 +3,9 @@ import requests
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-
 asr_api_url = "http://localhost:8001/asr"
-proj_dir = r"C:\Users\evann\Documents\GitHub\ASR"
-csv_file = os.path.join(proj_dir, "datasets", "cv-valid-dev.csv")
-
+csv_file = '../datasets/cv-valid-dev.csv'
+audio_dir = '../datasets/'
 
 def transcribe_file(file_path):
     """Send an audio file to the ASR API and return the transcription."""
@@ -20,15 +18,14 @@ def transcribe_file(file_path):
         return "Error"
    
 def process_csv():
-    """Read cv-valid-dev.csv, transcribe each MP3 file, and save results."""
+    # Read the CSV file and transcribe each audio file
     if not os.path.exists(csv_file):
         print(f"CSV file not found: {csv_file}")
         return
     
     df = pd.read_csv(csv_file)
-    df_test = df.head(10)
     file_paths = [
-        os.path.join(proj_dir, "datasets", row["filename"]) for _, row in df_test.iterrows()
+        os.path.join(audio_dir, row["filename"]) for _, row in df.iterrows()
     ]
     transcriptions = []
     with ThreadPoolExecutor(max_workers=20) as executor:
@@ -44,9 +41,9 @@ def process_csv():
                 print(f"Error processing {file_path}: {exc}")
                 transcriptions.append("Error")
 
-    # Add generated text to DataFrame
-    df_test["generated_text"] = transcriptions
-    df_test.to_csv("df_test", index=False)
+    # Add generated text to dataFrame and save to CSV
+    df["generated_text"] = transcriptions
+    df.to_csv('../datasets/cv-valid-dev.csv', index=False)
     print("Transcription completed. CSV updated.")
 
 
