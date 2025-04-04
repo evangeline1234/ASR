@@ -22,6 +22,9 @@ Write a ping API (i.e. http://localhost:8001/ping via GET) to return a response 
 ```bash
 python asr/ping_api.py
 ```
-Output should show: Server running on http://localhost:8001
-Then, paste http://localhost:8001/ping in browser. 
-Output should show: {"message": "pong"}
+The message "Server running on http://localhost:8001" should appear. \n
+Then, paste "http://localhost:8001/ping" in browser and it should show {"message": "pong"}. \n
+
+### 2.c) - 
+**📌 Question:**  
+Write an API with the following specifications as a hosted inference API for the model in Task 2a. Name your file asr_api.py.
