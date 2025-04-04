@@ -21,7 +21,6 @@ pip install -r requirements.txt
 ```sh
 python asr/ping_api.py
 ```
-The message "Server running on http://localhost:8001" should appear. \n
 Then, paste "http://localhost:8001/ping" in the browser and it should show {"message": "pong"}. \n
 
 ### 2.c) 
@@ -51,4 +50,10 @@ python asr/cv-decode.py
 ```sh
 docker build -t asr-api .
 ```
+
+## Task 3️⃣
+### 3.a)
+**📌 Question:**  From Task 2d, you are to use the common-voice mp3 files under cv-valid-train and cv-valid-train.csv for finetuning train dataset.
+
+Open Jupyter Notebook and run cv-train-2a.ipynb \n
 
