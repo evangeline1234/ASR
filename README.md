@@ -55,15 +55,15 @@ docker build -t asr-api .
 ### 3.a)
 **📌 Question:**  From Task 2d, you are to use the common-voice mp3 files under cv-valid-train and cv-valid-train.csv for finetuning train dataset.
 
-Open Jupyter Notebook and run cv-train-2a.ipynb.
+**Open Jupyter Notebook and run cv-train-2a.ipynb.**
 
 ## Task 5️⃣
 ### 5.a)
 **📌 Question:**  Using the transcribed results from cv-valid-dev mp3 dataset using your finetuned model in task 4, the hot words to be detected are: “be careful”, “destroy” and “stranger”. Save the list of mp3 filenames with the hot words detected into detected.txt.
 
-Open Jupyter Notebook and run cv-hotword-5a.ipynb.
+**Open Jupyter Notebook and run cv-hotword-5a.ipynb.**
 
 ### 5.b)
 **📌 Question:**  Using the text embedding model, write a python jupyter notebook called cv-hotword-similarity-5b.ipynb to find similar phrases to the 3 hot words in task 5a.
 
-Open Jupyter Notebook and run cv-hotword-similarity-5b.ipynb
+**Open Jupyter Notebook and run cv-hotword-similarity-5b.ipynb**
