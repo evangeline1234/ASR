@@ -50,7 +50,15 @@ python asr/cv-decode.py
 
 **✅ How to Run:**
 ```sh
+# Build docker image
 docker build -t asr-api .
+
+# Run container
+docker run -p 8001:8001 asr-api 
+```
+To test the API, run:
+```sh
+curl -X POST -F "file=@/home/username/Path/To/Your/File/sample-000000.mp3" http://localhost:8001/asr 
 ```
 
 ## Task 3️⃣
