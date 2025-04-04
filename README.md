@@ -50,7 +50,11 @@ python asr/cv-decode.py
 
 **✅ How to Run:**
 ```sh
+# Build docker image
 docker build -t asr-api .
+
+# Run container
+docker run -p 8001:8001 asr-api 
 ```
 
 ## Task 3️⃣
