@@ -13,7 +13,7 @@ asr\Scripts\activate  # On Windows
 pip install -r requirements.txt
 ```
 
-## *To Note: Download the dataset from https://www.dropbox.com/scl/fi/i9yvfqpf7p8uye5o8k1sj/common_voice.zip?rlkey=lz3dtjuhekc3xw4jnoeoqy5yu&dl=0 and upload into "datasets" folder for use.
+*To Note: Download the dataset from https://www.dropbox.com/scl/fi/i9yvfqpf7p8uye5o8k1sj/common_voice.zip?rlkey=lz3dtjuhekc3xw4jnoeoqy5yu&dl=0 and upload into "datasets" folder for use.
 
 ## Task 2️⃣ 
 ### 2.b)
