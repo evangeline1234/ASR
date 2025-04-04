@@ -13,6 +13,8 @@ asr\Scripts\activate  # On Windows
 pip install -r requirements.txt
 ```
 
+## *To Note: Download the dataset from https://www.dropbox.com/scl/fi/i9yvfqpf7p8uye5o8k1sj/common_voice.zip?rlkey=lz3dtjuhekc3xw4jnoeoqy5yu&dl=0 and upload into "datasets" folder for use.
+
 ## Task 2️⃣ 
 ### 2.b)
 **📌 Question:**  Write a ping API (i.e. http://localhost:8001/ping via GET) to return a response of “pong” to check if your service is working.
@@ -52,6 +54,8 @@ docker build -t asr-api .
 ```
 
 ## Task 3️⃣
+## Note: For the fine-tuning task, due to limited computational resources (GPU) and time, I only used 10,000 training audio samples for fine-tuning.
+
 ### 3.a)
 **📌 Question:**  From Task 2d, you are to use the common-voice mp3 files under cv-valid-train and cv-valid-train.csv for finetuning train dataset.
 
