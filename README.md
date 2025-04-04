@@ -55,5 +55,5 @@ docker build -t asr-api .
 ### 3.a)
 **📌 Question:**  From Task 2d, you are to use the common-voice mp3 files under cv-valid-train and cv-valid-train.csv for finetuning train dataset.
 
-Open Jupyter Notebook and run cv-train-2a.ipynb \n
+Open Jupyter Notebook and run cv-train-2a.ipynb. \n
 
