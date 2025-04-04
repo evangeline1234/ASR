@@ -42,6 +42,7 @@ propcache==0.3.1
 pyarrow==19.0.1
 pycparser==2.22
 pyparsing==3.2.3
+python-multipart==0.0.20
 pytz==2025.2
 PyYAML==6.0.2
 RapidFuzz==3.12.2
