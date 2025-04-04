@@ -15,8 +15,7 @@ pip install -r requirements.txt
 
 ## Task 2️⃣ 
 ### 2.b)
-**📌 Question:**  
-Write a ping API (i.e. http://localhost:8001/ping via GET) to return a response of “pong” to check if your service is working.
+**📌 Question:**  Write a ping API (i.e. http://localhost:8001/ping via GET) to return a response of “pong” to check if your service is working.
 
 **✅ How to Run:**
 ```sh
@@ -26,8 +25,7 @@ The message "Server running on http://localhost:8001" should appear. \n
 Then, paste "http://localhost:8001/ping" in the browser and it should show {"message": "pong"}. \n
 
 ### 2.c) 
-**📌 Question:**  
-Write an API with the following specifications as a hosted inference API for the model in Task 2a. Name your file asr_api.py.
+**📌 Question:**  Write an API with the following specifications as a hosted inference API for the model in Task 2a. Name your file asr_api.py.
 
 **✅ How to Run:**
 ```sh
@@ -39,12 +37,18 @@ curl -F "file=@/home/username/Path/To/Your/File/sample-000000.mp3" http://localh
 ```
 
 ### 2.d) 
-**📌 Question:**  
-Write a python file called cv-decode.py to call your API in Task 2b to transcribe the 4,076 common-voice mp3 files under cv-valid-dev folder.
+**📌 Question:**  Write a python file called cv-decode.py to call your API in Task 2b to transcribe the 4,076 common-voice mp3 files under cv-valid-dev folder.
 
 **✅ How to Run:**
 ```sh
 python asr/cv-decode.py
 ```
 
+### 2.e) 
+**📌 Question:**  Containerise asr_api.py using Docker. This will be in Dockerfile with the service name asr-api.
+
+**✅ How to Run:**
+```sh
+docker build -t asr-api .
+```
 
