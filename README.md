@@ -54,7 +54,7 @@ docker build -t asr-api .
 ```
 
 ## Task 3️⃣
-## Note: For the fine-tuning task, due to limited computational resources (GPU) and time, I only used 10,000 training audio samples for fine-tuning.
+*Note: For the fine-tuning task, due to limited computational resources (GPU) and time, I only used 10,000 training audio samples for fine-tuning.
 
 ### 3.a)
 **📌 Question:**  From Task 2d, you are to use the common-voice mp3 files under cv-valid-train and cv-valid-train.csv for finetuning train dataset.
